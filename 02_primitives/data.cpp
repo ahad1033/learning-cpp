@@ -10,9 +10,7 @@ int main()
     double dinnerBill = 50.46;
     char alpha = 'A';
     bool isVerified = true;
-    long largeStorage = 100000;
-    short shortStorage = 10;
 
-    // cout << largeStorage << endl;
+    // cout << isVerified << endl;
     return 0;
 }

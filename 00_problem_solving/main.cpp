@@ -105,7 +105,7 @@ int main()
 
     // Reverse the digits of a number (e.g., 1234 → 4321).
     long num;
-    int reverseNum = 0;
+    long reverseNum = 0;
 
     cout << "Enter a number: " << endl;
     cin >> num;
@@ -118,6 +118,26 @@ int main()
     }
 
     cout << "Reversed num: " << reverseNum << endl;
+
+    // Palindrome check
+    long num;
+    long reverseNum = 0;
+
+    cout << "Enter a number: " << endl;
+    cin >> num;
+
+    long originalNum = num;
+
+    for (int i = 0; num != 0; i++)
+    {
+        int lastNum = num % 10;
+        num = num / 10;
+        reverseNum = (reverseNum * 10) + lastNum;
+    }
+
+    bool isPalindrome = (reverseNum == originalNum);
+
+    cout << (isPalindrome ? "Palindrome" : "Not Palindrome") << endl;
 
     return 0;
 }

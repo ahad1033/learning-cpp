@@ -18,7 +18,7 @@ int main()
                 cout << arr[i];
             }
             cout << " ";
-        }
+        }/*  */
         cout << endl;
     }
     return 0;
